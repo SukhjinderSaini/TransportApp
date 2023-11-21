@@ -1,0 +1,8 @@
+.header a, .header input{
+   cursor: pointer; 
+}
+.navbar{
+    background-color: #91b7d2;
+}
+.input-switch{ color:#fff}
+.form-switch .form-check-input {width: 4em; height: 2em;}
