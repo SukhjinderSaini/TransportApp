@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className={`App ${appliedTheme.theme}`}>
-      <Header switchTheme={switchTheme}></Header>
+      <Header switchTheme={switchTheme} showThemeSwitch></Header>
       <Container fluid className="main-content">
         <RunningReport></RunningReport>
       </Container>

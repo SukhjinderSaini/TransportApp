@@ -4,10 +4,11 @@ import { FaBusAlt } from "react-icons/fa";
 import "./Header.css";
 
 interface Props {
-  switchTheme: () => void;
+  switchTheme?: () => void;
+  showThemeSwitch?: boolean;
 }
 
-function Header({ switchTheme }: Props) {
+function Header({ switchTheme, showThemeSwitch }: Props) {
   const [checked, setChecked] = useState<boolean>(false);
   const switchMyTheme = () => {
     setChecked(!checked);
@@ -21,21 +22,23 @@ function Header({ switchTheme }: Props) {
             <NavbarBrand className="ps-sm-1 ps-md-3" href="#home">
               <FaBusAlt size={30} /> <span className="ps-2">Bus Service</span>
             </NavbarBrand>
-            <Nav>
-              <div className="nav-item text-end pe-sm-5">
-                <div className="form-check form-switch">
-                  <Form className="input-switch">
-                    <Form.Switch.Input
-                      id="custom-switch"
-                      onChange={switchMyTheme}
-                    />
-                    <Form.Switch.Label className="align-self-center ps-2 pt-2">
-                      {!checked ? " Normal" : " Fancy"}
-                    </Form.Switch.Label>
-                  </Form>
+            {showThemeSwitch && (
+              <Nav>
+                <div className="nav-item text-end pe-sm-5">
+                  <div className="form-check form-switch">
+                    <Form className="input-switch">
+                      <Form.Switch.Input
+                        id="custom-switch"
+                        onChange={switchMyTheme}
+                      />
+                      <Form.Switch.Label className="align-self-center ps-2 pt-2">
+                        {!checked ? " Normal" : " Fancy"}
+                      </Form.Switch.Label>
+                    </Form>
+                  </div>
                 </div>
-              </div>
-            </Nav>
+              </Nav>
+            )}
           </Container>
         </Navbar>
       </div>

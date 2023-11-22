@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from "react";
 import "./RunningReport.css";
 import { BusRunningStatus, BusRunningInfo } from "./RunningReport.types";
-import RouteVariant from "./RouteVariant";
-import ServiceNotes from "../ServiceNotes";
+import RouteVariant from "../../utils/Helpers/RouteVariant";
+import ServiceNotes from "../Notes/ServiceNotes";
 import { Table, Accordion } from "react-bootstrap";
-import { FaRegCaretSquareDown, FaRegCaretSquareUp } from "react-icons/fa";
 import { BsCaretUpFill, BsCaretDownFill } from "react-icons/bs";
+import { RunningStatus } from "../../utils/constants";
 
 function RunningReport() {
   const [busData, setBusData] = useState<BusRunningStatus[]>();
   const [activeKey, setActiveKey] = useState<string | null>(null);
   const fetchServiceData = async () => {
-    const bus_service_call = await fetch("/data/bus-services-data.json");
-    const bus_service_data = await bus_service_call.json();
-    return bus_service_data.data;
+    try {
+      const bus_service_call = await fetch("/data/bus-services-data.json");
+      const bus_service_data = await bus_service_call.json();
+      return bus_service_data.data;
+    } catch {
+      return [];
+    }
   };
   useEffect(() => {
-    fetchServiceData().then((data) => {
+    fetchServiceData().then((data: BusRunningStatus[]) => {
       setBusData(data);
     });
   }, []);
@@ -89,12 +93,23 @@ function RunningReport() {
                                 {busRunningInfo.deviationFromTimetable ===
                                   null ||
                                 busRunningInfo.deviationFromTimetable === 0 ? (
-                                  <span className="text-success">On Time</span>
+                                  <span className="text-success">
+                                    {RunningStatus.ONTIME}
+                                  </span>
                                 ) : busRunningInfo.deviationFromTimetable >
                                   0 ? (
-                                  <span className="text-primary">Late</span>
+                                  <span className="text-primary">
+                                    {RunningStatus.LATE}
+                                  </span>
+                                ) : busRunningInfo.deviationFromTimetable <
+                                  0 ? (
+                                  <span className="text-danger">
+                                    {RunningStatus.EARLY}
+                                  </span>
                                 ) : (
-                                  <span className="text-danger">Early</span>
+                                  <span className="warning">
+                                    {RunningStatus.UNKNOWN}
+                                  </span>
                                 )}
                               </td>
                             </tr>
