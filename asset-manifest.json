@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/transport-app/static/css/main.10eaaaba.css",
+    "main.js": "/transport-app/static/js/main.d9c4962a.js",
+    "static/js/787.fde92c7a.chunk.js": "/transport-app/static/js/787.fde92c7a.chunk.js",
+    "index.html": "/transport-app/index.html",
+    "main.10eaaaba.css.map": "/transport-app/static/css/main.10eaaaba.css.map",
+    "main.d9c4962a.js.map": "/transport-app/static/js/main.d9c4962a.js.map",
+    "787.fde92c7a.chunk.js.map": "/transport-app/static/js/787.fde92c7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10eaaaba.css",
+    "static/js/main.d9c4962a.js"
+  ]
+}
