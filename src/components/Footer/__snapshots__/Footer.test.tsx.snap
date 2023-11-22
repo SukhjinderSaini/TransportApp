@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly when there are no items 1`] = `
+<nav
+  className="navbar navbar-expand-md navbar-light bg-dark fixed-bottom"
+  data-bs-theme="dark"
+>
+  <div
+    className="p-2 pe-3 text-light container-fluid"
+  >
+    <button
+      aria-controls="basic-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="justify-content-center navbar-collapse collapse"
+      id="responsive-navbar-nav"
+    >
+      <a
+        className="px-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action1"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <span
+        className="align-self-center d-none d-md-inline px-md-2"
+      >
+        |
+      </span>
+      <a
+        className="px-2 px-sm-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action2"
+        onClick={[Function]}
+      >
+        About
+      </a>
+      <span
+        className="align-self-center d-none d-md-inline px-md-2"
+      >
+        |
+      </span>
+      <a
+        className="px-2 px-sm-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action3"
+        onClick={[Function]}
+      >
+        Copyright
+      </a>
+      <span
+        className="align-self-center d-none d-md-inline px-md-2"
+      >
+        |
+      </span>
+      <a
+        className="px-2 px-sm-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action4"
+        onClick={[Function]}
+      >
+        Services
+      </a>
+      <span
+        className="align-self-center d-none d-md-inline px-md-2"
+      >
+        |
+      </span>
+      <a
+        className="px-2 px-sm-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action5"
+        onClick={[Function]}
+      >
+        Contact Us
+      </a>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`renders footer correctly 1`] = `
+<nav
+  className="navbar navbar-expand-md navbar-light bg-dark fixed-bottom"
+  data-bs-theme="dark"
+>
+  <div
+    className="p-2 pe-3 text-light container-fluid"
+  >
+    <button
+      aria-controls="basic-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="justify-content-center navbar-collapse collapse"
+      id="responsive-navbar-nav"
+    >
+      <a
+        className="px-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action1"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <span
+        className="align-self-center d-none d-md-inline px-md-2"
+      >
+        |
+      </span>
+      <a
+        className="px-2 px-sm-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action2"
+        onClick={[Function]}
+      >
+        About
+      </a>
+      <span
+        className="align-self-center d-none d-md-inline px-md-2"
+      >
+        |
+      </span>
+      <a
+        className="px-2 px-sm-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action3"
+        onClick={[Function]}
+      >
+        Copyright
+      </a>
+      <span
+        className="align-self-center d-none d-md-inline px-md-2"
+      >
+        |
+      </span>
+      <a
+        className="px-2 px-sm-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action4"
+        onClick={[Function]}
+      >
+        Services
+      </a>
+      <span
+        className="align-self-center d-none d-md-inline px-md-2"
+      >
+        |
+      </span>
+      <a
+        className="px-2 px-sm-3 px-md-3 nav-link"
+        disabled={false}
+        href="#action5"
+        onClick={[Function]}
+      >
+        Contact Us
+      </a>
+    </div>
+  </div>
+</nav>
+`;

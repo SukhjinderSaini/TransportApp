@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notes renders correctly 1`] = `
+Array [
+  <div
+    className="list-group"
+    onKeyDown={[Function]}
+  />,
+  <textarea
+    aria-label="With textarea"
+    className="mt-3 mb-3 form-control"
+    onChange={[Function]}
+    placeholder="Enter notes here"
+    value=""
+  />,
+  <div
+    className="text-start mb-3 flex-grow"
+  >
+    <button
+      className="btn btn-primary mt-2"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      Save Notes
+    </button>
+  </div>,
+]
+`;

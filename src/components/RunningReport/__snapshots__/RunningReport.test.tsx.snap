@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RunningReport RunningReport renders correctly 1`] = `
+<div
+  className="d-flex flex-column m-sm-3 m-md-5"
+>
+  <div
+    className="display-6 fw-normal text-start"
+  >
+    Bus Reports
+  </div>
+  <div
+    className="aling-items-center justify-content-center mt-3"
+  />
+</div>
+`;
+
+exports[`renders correctly 1`] = `
+<div
+  className="d-flex flex-column m-sm-3 m-md-5"
+>
+  <div
+    className="display-6 fw-normal text-start"
+  >
+    Bus Reports
+  </div>
+  <div
+    className="aling-items-center justify-content-center mt-3"
+  />
+</div>
+`;
+
+exports[`running report renders correctly 1`] = `
+<div
+  className="d-flex flex-column m-sm-3 m-md-5"
+>
+  <div
+    className="display-6 fw-normal text-start"
+  >
+    Bus Reports
+  </div>
+  <div
+    className="aling-items-center justify-content-center mt-3"
+  />
+</div>
+`;

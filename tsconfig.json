@@ -14,7 +14,7 @@
     "noImplicitThis": true,
     "noImplicitAny": true,
   },
-  "include": ["src/*.tsx","custom.d.ts"],
+  "include": ["src/*.tsx","custom.d.ts", "src/components/Header.tsx"],
   "exclude": [
     "node_modules",
     "build",
