@@ -1,0 +1,8 @@
+Assumptions:
+
+ #Bus Running Schedule
+  deviationFromTimetable : ANY Non numeric value except null => UNKNOWN
+  deviationFromTimetable : null | 0  => "On Time"
+  deviationFromTimetable < 0 => "Running Early"
+  deviationFromTimetable > 0 => "Running Late"
+   
