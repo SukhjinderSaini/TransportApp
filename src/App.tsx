@@ -1,23 +1,32 @@
-import logo from "./logo.svg";
+import React, { useState } from "react";
+import { Theme, AvailableThemes } from "./App.types";
+import { Container } from "react-bootstrap";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import RunningReport from "./components/RunningReport/RunningReport";
+
 import "./App.css";
-import React from "react";
 
 function App() {
+  const [appliedTheme, updateTheme] = useState<Theme>({
+    theme: AvailableThemes.NORMAL,
+  });
+
+  const switchTheme = () => {
+    if (appliedTheme.theme === AvailableThemes.NORMAL) {
+      updateTheme({ theme: AvailableThemes.FANCY });
+      return;
+    }
+    return updateTheme({ theme: AvailableThemes.NORMAL });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${appliedTheme.theme}`}>
+      <Header switchTheme={switchTheme}></Header>
+      <Container fluid className="main-content">
+        <RunningReport></RunningReport>
+      </Container>
+      <Footer></Footer>
     </div>
   );
 }

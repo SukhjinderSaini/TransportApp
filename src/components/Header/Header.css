@@ -1,6 +1,9 @@
 .header a, .header input{
    cursor: pointer; 
 }
+.header .container{
+    margin: 0 20px;
+}
 .navbar{
     background-color: #91b7d2;
 }
